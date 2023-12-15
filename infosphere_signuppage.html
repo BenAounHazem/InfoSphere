@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <style>
+
+        body{
+            background: linear-gradient(45deg, #FC466B, #3F5EFB);
+            height: 90vh;
+            font-family: arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+        .container{
+            position: relative;
+        }
+
+        form{
+            background: rgba(255, 255, 255, .3);
+            padding: 2.2rem;
+            height: 450px;
+            border-radius: 17.1px;
+            border-left: 0.855px solid rgba(255, 255, 255, .3);
+            border-top: 0.855px solid rgba(255, 255, 255, .3);
+            backdrop-filter: blur(8.55px);
+            -webkit-backdrop-filter: blur(8.55px);
+            -moz-backdrop-filter: blur(8.55px);
+            box-shadow: 17.1px 17.1px 34.2px -5.13px rgba(0, 0, 0, .2);
+            text-align: center;
+            }
+
+        p{
+            color: white;
+            font-weight: 500;
+            opacity: .7;
+            font-size: 1.197rem;
+            margin-bottom: 51.3px;
+            text-shadow: 1.71px 1.71px 3.42px rgba(0, 0, 0, .2);
+        }
+
+        a{
+            text-decoration: none;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        a:hover {
+            text-shadow: 1.71px 1.71px 5.13px #00000040;
+        }
+
+        a:active{
+            text-shadow: none;
+        }
+
+        input{
+            background: transparent;
+            border: none;
+            border-left: 0.855px solid rgba(255, 255, 255, .3);
+            border-top: 0.855px solid rgba(255, 255, 255, .3);
+            padding: 0.855rem;
+            width: 171px;
+            border-radius: 42.75px;
+            backdrop-filter: blur(4.275px);
+            -webkit-backdrop-filter: blur(4.275px);
+            -moz-backdrop-filter: blur(4.275px);
+            box-shadow: 3.42px 3.42px 51.3px rgba(0, 0, 0, .2);
+            color: white;
+            font-weight: 500;
+            text-shadow: 1.71px 1.71px 3.42px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 1.71em;
+                    }
+
+        select{
+            background: transparent;
+            border: none;
+            border-left: 0.855px solid rgba(255, 255, 255, .3);
+            border-top: 0.855px solid rgba(255, 255, 255, .3);
+            padding: 0.855rem;
+            width: 198px;
+            border-radius: 42.75px;
+            backdrop-filter: blur(4.275px);
+            -webkit-backdrop-filter: blur(4.275px);
+            -moz-backdrop-filter: blur(4.275px);
+            box-shadow: 3.42px 3.42px 51.3px rgba(0, 0, 0, .2);
+            color: white;
+            font-weight: 500;
+            text-shadow: 1.71px 1.71px 3.42px rgba(0, 0, 0, .2);
+            transition: all .3s;
+            margin-bottom: 1.71em;
+        }
+
+        select>option{
+            background:plum ;
+                    }
+        
+        input:hover,
+        select:hover,
+        input[type="firstname"]:focus,
+        input[type="lastname"]:focus,
+        input[type="username"]:focus,
+        input[type="email"]:focus,
+        input[type="cinpassport"]:focus,
+        input[type="phonenumber"]:focus,
+        input[type="password"]:focus{
+            background: rgba(255,255,255,0.1);
+            box-shadow: 4px 4px 60px 8px rgba(0,0,0,0.2);
+                                    }
+        
+        input[type="button"] {
+            margin-top: 10px;
+            width: 150px;
+            font-size: 1rem;
+            cursor: pointer;
+                            }
+        
+        ::placeholder{
+            color: #fff;  
+        } 
+        
+        .drop{
+            background: rgba(255, 255, 255, .3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border-left: 1px solid rgba(255, 255, 255, .3);
+            border-top: 1px solid rgba(255, 255, 255, .3);
+            box-shadow: 10px 10px 60px -8px rgba(0,0,0,0.2);
+            position: absolute;
+            transition: all 0.2s ease;
+            }    
+            
+        .drop-1{
+            height: 80px; width: 80px;
+            top: -20px; left: -40px;
+            z-index: -1;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+            
+        }
+
+        .drop-2{
+            height: 80px; width: 80px;
+            bottom: -30px; right: -30px;
+            
+                }
+
+        
+
+        .drop-4{
+            height: 120px; width: 120px;
+            top: -60px; right: -60px;
+        }
+
+        .drop-5{
+            height: 60px; width: 60px;
+            bottom: 170px; left: 90px;
+            z-index: -1;
+                }
+            
+            
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        <form >
+          <p>Welcome to InfoSphere</p>
+          <input type="firstname" placeholder="First name ">
+          <input type="lastname" placeholder="Last name "><br>
+          <input type="username" placeholder="Username ">
+          <input type="email" placeholder="Email"><br>
+          <input type="cinpassport" placeholder="CIN or Passport ">
+          <input type="phonenumber" placeholder="Phone number "><br>
+          <input type="password" placeholder="Password">
+          <select id="grade" name="grade" required><br>
+            <option value="" disabled selected>Select your grade</option>
+            <option value="1">Licence 1</option>
+            <option value="2">Licence 2</option>
+            <option value="3">Licence 3</option>
+            <option value="4">Master 1</option>
+            <option value="5">Master 2</option>
+          </select><br>
+          <input type="button" value="Sign up "><br>
+          <a href="file:///C:/Users/benou/OneDrive/Desktop/Infosphere/infosphere_signinpage.html# ">Have an account?Login here</a>
+        </form>
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div> 
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+      </div>
+</body>
+</html>
